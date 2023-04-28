@@ -123,8 +123,8 @@ function App() {
             value: listingPrice.toString(),
           });
 
-      await transaction.wait();
-      console.log(transaction);
+      const receipt = await transaction.wait();
+      console.log(receipt);
     } catch (error) {
       // setError("error while creating sale");
       // setOpenError(true);
