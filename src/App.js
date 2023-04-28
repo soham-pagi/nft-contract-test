@@ -228,10 +228,17 @@ function App() {
       </button>
       <button
         onClick={() => {
-          buyNFT({ tokenId: 3, price: 12 });
+          buyNFT({ tokenId: 3, price: 20 });
         }}
       >
         Buy NFT
+      </button>
+      <button
+        onClick={() => {
+          createSale("www.facebook.com", 20, true, 3);
+        }}
+      >
+        Resell
       </button>
     </div>
   );
